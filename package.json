@@ -1,0 +1,36 @@
+{
+	"name": "typescript-web-template",
+	"version": "",
+	"description": "",
+	"author": "Chen-I Lim",
+	"main": "pack/main.js",
+	"scripts": {
+		"clean": "rm -rf dist && rm -rf build && rm -rf pack && rm -rf debug",
+		"lint": "eslint -c .eslintrc.js --ext .ts src",
+		"debug": "tsc --diagnostics && cp ./src/main.ts ./debug && cp ./src/index.html ./debug && cp -r ./src/static ./debug",
+		"packdev": "NODE_ENV=debug webpack --config webpack.dev.js",
+		"pack": "NODE_ENV=production webpack --config webpack.js",
+		"release": "npm run packpro && npm run buildpro"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.18.1",
+		"@typescript-eslint/parser": "^6.18.1",
+		"copy-webpack-plugin": "^12.0.1",
+		"eslint": "^8.56.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"terser-webpack-plugin": "^5.3.10",
+		"ts-loader": "^9.5.1",
+		"typescript": "^5.3.3",
+		"webpack": "^5.89.0",
+		"webpack-cli": "^5.1.4",
+		"webpack-merge": "^5.10.0",
+		"webpack-obfuscator": "^3.5.1",
+		"webpack-preprocessor-loader": "^1.3.0"
+	}
+}

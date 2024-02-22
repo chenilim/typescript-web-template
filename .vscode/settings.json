@@ -1,0 +1,17 @@
+{
+	"liveServer.settings.port": 5501,
+	"liveServer.settings.ignoreFiles": [
+		"**"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"eslint.validate": [
+		"javascript"
+	],
+	"eslint.workingDirectories": [
+		{
+			"mode": "auto"
+		}
+	],
+}

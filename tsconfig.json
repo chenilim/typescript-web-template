@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "es2019",
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"strictNullChecks": false,
+		"sourceMap": true,
+		"incremental": false,
+		"outDir": "./debug",
+		"baseUrl": ".",
+		"moduleResolution": "node",
+		"paths": {
+			"*": [
+				"node_modules/*"
+			]
+		}
+	},
+	"include": [
+		"./src"
+	],
+	"exclude": [
+	]
+}
